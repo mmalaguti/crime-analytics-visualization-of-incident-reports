@@ -1,0 +1,299 @@
+{
+    "beaker": "2",
+    "evaluators": [
+        {
+            "name": "TeX",
+            "plugin": "TeX",
+            "view": {
+                "cm": {
+                    "mode": "stex"
+                }
+            }
+        },
+        {
+            "name": "IPython",
+            "plugin": "IPython",
+            "imports": "",
+            "supplementalClassPath": "",
+            "view": {
+                "cm": {
+                    "mode": "python"
+                }
+            },
+            "setup": "%matplotlib inline\nimport numpy\nimport matplotlib\nfrom matplotlib import pylab, mlab, pyplot\nnp = numpy\nplt = pyplot\nfrom IPython.display import display\nfrom IPython.core.pylabtools import figsize, getfigs\nfrom pylab import *\nfrom numpy import *\n"
+        },
+        {
+            "name": "JavaScript",
+            "plugin": "JavaScript",
+            "jsSetting2": "",
+            "jsSetting1": "",
+            "view": {
+                "cm": {
+                    "mode": "javascript",
+                    "background": "#FFE0F0"
+                }
+            },
+            "languageVersion": "ES2015"
+        },
+        {
+            "name": "R",
+            "plugin": "R",
+            "view": {
+                "cm": {
+                    "mode": "r"
+                }
+            }
+        },
+        {
+            "name": "IPython",
+            "plugin": "IPython",
+            "setup": "%matplotlib inline\nimport numpy\nimport matplotlib\nfrom matplotlib import pylab, mlab, pyplot\nnp = numpy\nplt = pyplot\nfrom IPython.display import display\nfrom IPython.core.pylabtools import figsize, getfigs\nfrom pylab import *\nfrom numpy import *\n",
+            "view": {
+                "cm": {
+                    "mode": "python"
+                }
+            }
+        },
+        {
+            "name": "SQL",
+            "plugin": "SQL",
+            "imports": "",
+            "view": {
+                "cm": {
+                    "mode": "text/x-sql"
+                }
+            }
+        },
+        {
+            "name": "Python3",
+            "plugin": "Python3",
+            "setup": "%matplotlib inline\nimport numpy\nimport matplotlib\nfrom matplotlib import pylab, mlab, pyplot\nnp = numpy\nplt = pyplot\nfrom IPython.display import display\nfrom IPython.core.pylabtools import figsize, getfigs\nfrom pylab import *\nfrom numpy import *\n",
+            "view": {
+                "cm": {
+                    "mode": "python"
+                }
+            }
+        },
+        {
+            "name": "HTML",
+            "plugin": "HTML",
+            "view": {
+                "cm": {
+                    "mode": "htmlmixed"
+                }
+            }
+        }
+    ],
+    "cells": [
+        {
+            "id": "section001",
+            "type": "section",
+            "level": 1,
+            "title": "VISUALIZATION OF INCIDENT REPORTS (San Francisco & Seatlle) - Summer 2014",
+            "collapsed": false,
+            "evaluatorReader": false
+        },
+        {
+            "id": "code001",
+            "type": "code",
+            "evaluator": "HTML",
+            "input": {
+                "body": [
+                    "<h1>Overview</h1>",
+                    "",
+                    "<h3>In this assignment, you will analyze criminal incident data from Seattle or San Francisco to visualize patterns and, if desired, contrast and compare patterns across the two cities.",
+                    "",
+                    "You will produce a blog-post-style visual narrative consisting of a series of visualizations interspersed with sufficient descriptive text to make a convincing argument.",
+                    "",
+                    "The assignment will be assessed by peer review. The rubric for assessment will include questions about the effectiveness and clarity of your argument, your use of visualization, and the completeness of your analysis. Reproducibility will also be considered, but will be evaluated subjectively -- peer reviewers will not be asked to recreate your results.",
+                    "</h3>",
+                    "<h1>Project Ideas</h1>",
+                    "",
+                    "<h3>You may want to consider one or more of the following types of questions when developing your submission.",
+                    "",
+                    "For either city, how do incidents vary by time of day? Which incidents are most common in the evening? During what periods of the day are robberies most common?",
+                    "For either city, how do incidents vary by neighborhood? Which incidents are most common in the city center? In what areas or neighborhoods are robberies or thefts most common?",
+                    "For either city, how do incidents vary month to month in the Summer 2014 dataset?",
+                    "For either city, which incident types tend to correlate with each other on a day-by-day basis?",
+                    "Advanced What can we infer broadly about the differences in crime patterns between Seattle and San Francisco? Does one city tend to have more crime than the other, per capita? Do the relative frequencies of types of incidents change materially between the two cities? (NOTE: The two datasets do not have the same schema, so comparisons will require some work and some assumptions. This will require extra work, but you will be working at the forefront of what is known!)",
+                    "Advanced For either city, do certain crimes correlate with environmental factors such as temperature? (To answer this kind of question, you will need to identify and use external data sources!)",
+                    "</h3>",
+                    ""
+                ],
+                "hidden": true
+            },
+            "output": {
+                "selectedType": "BeakerDisplay",
+                "outputArrived": true,
+                "elapsedTime": 0,
+                "state": {},
+                "result": {
+                    "type": "BeakerDisplay",
+                    "innertype": "Html",
+                    "object": "<script>\nvar beaker = bkHelper.getBeakerObject().beakerObj;\n</script>\n<h1>Overview</h1>\n\n<h3>In this assignment, you will analyze criminal incident data from Seattle or San Francisco to visualize patterns and, if desired, contrast and compare patterns across the two cities.\n\nYou will produce a blog-post-style visual narrative consisting of a series of visualizations interspersed with sufficient descriptive text to make a convincing argument.\n\nThe assignment will be assessed by peer review. The rubric for assessment will include questions about the effectiveness and clarity of your argument, your use of visualization, and the completeness of your analysis. Reproducibility will also be considered, but will be evaluated subjectively -- peer reviewers will not be asked to recreate your results.\n</h3>\n<h1>Project Ideas</h1>\n\n<h3>You may want to consider one or more of the following types of questions when developing your submission.\n\nFor either city, how do incidents vary by time of day? Which incidents are most common in the evening? During what periods of the day are robberies most common?\nFor either city, how do incidents vary by neighborhood? Which incidents are most common in the city center? In what areas or neighborhoods are robberies or thefts most common?\nFor either city, how do incidents vary month to month in the Summer 2014 dataset?\nFor either city, which incident types tend to correlate with each other on a day-by-day basis?\nAdvanced What can we infer broadly about the differences in crime patterns between Seattle and San Francisco? Does one city tend to have more crime than the other, per capita? Do the relative frequencies of types of incidents change materially between the two cities? (NOTE: The two datasets do not have the same schema, so comparisons will require some work and some assumptions. This will require extra work, but you will be working at the forefront of what is known!)\nAdvanced For either city, do certain crimes correlate with environmental factors such as temperature? (To answer this kind of question, you will need to identify and use external data sources!)\n</h3>\n"
+                },
+                "height": 314
+            },
+            "evaluatorReader": true,
+            "lineCount": 20
+        },
+        {
+            "id": "markdownpcrv5T",
+            "type": "markdown",
+            "body": [
+                "Import Packages"
+            ],
+            "evaluatorReader": false
+        },
+        {
+            "id": "code2uVtKX",
+            "type": "code",
+            "evaluator": "IPython",
+            "input": {
+                "body": [
+                    "%matplotlib inline",
+                    "import matplotlib.pyplot as plt",
+                    "import pandas as pd",
+                    "import numpy as np",
+                    "import seaborn as sns; sns.set()"
+                ],
+                "hidden": true
+            },
+            "output": {
+                "selectedType": "Hidden",
+                "elapsedTime": 394,
+                "state": {},
+                "pluginName": "IPython",
+                "shellId": "5FD76BDC643A41CFA3139E9EB414F61E"
+            },
+            "evaluatorReader": true,
+            "lineCount": 5
+        },
+        {
+            "id": "markdownuQ0WeQ",
+            "type": "markdown",
+            "body": [
+                "Next we parse the data  invidually and create a third data set of combined data."
+            ],
+            "evaluatorReader": false
+        },
+        {
+            "id": "codemOIfd1",
+            "type": "code",
+            "evaluator": "IPython",
+            "input": {
+                "body": [
+                    "san_fran = pd.read_csv(r'C:\\Users\\HPE9160T\\Desktop\\communication\\communication\\crime_analytics\\sanfrancisco_incidents_summer_2014.csv',",
+                    "                    parse_dates=['IncidntNum','Category','Descript','DayOfWeek','Date','Time','PdDistrict','Resolution','Address','X','Y','Location','PdId'],",
+                    "                    infer_datetime_format=True)",
+                    "san_fran.columns",
+                    "",
+                    "seattle = pd.read_csv(r'C:\\Users\\HPE9160T\\Desktop\\communication\\communication\\crime_analytics\\seattle_incidents_summer_2014.csv',",
+                    "                    parse_dates=['RMS CDW ID','General Offense Number','Offense Code','Offense Code Extension','Offense Type','Summary Offense Code','Summarized Offense Description','Date Reported'",
+                    "                                 ,'Occurred Date or Date Range Start','Occurred Date Range End','Hundred Block Location','District/Sector','Zone/Beat','Census Tract 2000','Longitude','Latitude','Location','Month','Year'],",
+                    "                    infer_datetime_format=True)",
+                    "seattle.columns",
+                    "",
+                    ""
+                ]
+            },
+            "output": {
+                "state": {},
+                "result": "<div class=\"output_subarea output_text\"><pre>Index(['RMS CDW ID', 'General Offense Number', 'Offense Code',\n       'Offense Code Extension', 'Offense Type', 'Summary Offense Code',\n       'Summarized Offense Description', 'Date Reported',\n       'Occurred Date or Date Range Start', 'Occurred Date Range End',\n       'Hundred Block Location', 'District/Sector', 'Zone/Beat',\n       'Census Tract 2000', 'Longitude', 'Latitude', 'Location', 'Month',\n       'Year'],\n      dtype='object')</pre></div>",
+                "selectedType": "Html",
+                "pluginName": "IPython",
+                "shellId": "5FD76BDC643A41CFA3139E9EB414F61E",
+                "elapsedTime": 25675,
+                "height": 165
+            },
+            "evaluatorReader": true,
+            "lineCount": 12
+        },
+        {
+            "id": "markdownHHKctN",
+            "type": "markdown",
+            "body": [
+                "<h2>Import weather data & Join weather data with main dataset</h2> "
+            ],
+            "evaluatorReader": false
+        },
+        {
+            "id": "codeeJwczu",
+            "type": "code",
+            "evaluator": "IPython",
+            "input": {
+                "body": [
+                    "import urllib.request",
+                    "import json",
+                    "f = urllib.request.urlopen('http://api.wunderground.com/api/79809e2609d55c37/geolookup/conditions/q/IA/Cedar_Rapids.json')",
+                    "json_string = f.read()",
+                    "parsed_json = json.loads(json_string.decode(\"utf8\"))",
+                    "location = parsed_json['location']['city']",
+                    "temp_f = parsed_json['current_observation']['temp_f']",
+                    "print (\"Current temperature in %s is: %s\" % (location, temp_f))",
+                    "f.close()"
+                ]
+            },
+            "output": {
+                "state": {},
+                "result": {
+                    "type": "Results",
+                    "outputdata": [
+                        {
+                            "type": "out",
+                            "value": "Current temperature in Cedar Rapids is: 57.6\n"
+                        }
+                    ]
+                },
+                "selectedType": "Results",
+                "pluginName": "IPython",
+                "shellId": "5FD76BDC643A41CFA3139E9EB414F61E",
+                "elapsedTime": 472,
+                "height": 55
+            },
+            "evaluatorReader": true,
+            "lineCount": 9
+        },
+        {
+            "id": "sectionK448sG",
+            "type": "section",
+            "title": "<h2>Exploring San Francisco Data</h2>",
+            "level": 2,
+            "evaluatorReader": false,
+            "collapsed": false
+        },
+        {
+            "id": "codeBKFi7P",
+            "type": "code",
+            "evaluator": "IPython",
+            "input": {
+                "body": [
+                    "incident by day of week, time of day, what incident most common early morning and late evening, whats the resolution of these incidents, ",
+                    "crime per capita?",
+                    "Do the relative frequencies of types of incidents change materially between the two cities?",
+                    "correlation with temperature/weather?",
+                    "coorelation with other?",
+                    "",
+                    "1) Incidents by date",
+                    "2) Incidents by day of week",
+                    "3) Incidents by time of day",
+                    "4) Incidents per capita",
+                    "5) Incidents by location "
+                ]
+            },
+            "output": {
+                "result": {
+                    "type": "BeakerDisplay",
+                    "innertype": "Error",
+                    "object": "Evaluation cancelled due to a failure of an earlier cell evaluation"
+                },
+                "selectedType": "BeakerDisplay",
+                "state": {},
+                "height": 77
+            },
+            "evaluatorReader": true,
+            "lineCount": 11
+        }
+    ],
+    "namespace": {}
+}
